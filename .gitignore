@@ -1,0 +1,14 @@
+/.vs
+/WpfCostomTitle/bin
+/WpfCostomTitle/obj
+/WpfCostomTitle/*.user
+/src/.vs
+/src/HandyDemo/bin
+/src/HandyDemo/obj
+/src/HandyDemo/*.user
+/src/MetroDemo/MetroDemo.csproj.user
+/src/MetroDemo/bin
+/src/MetroDemo/obj
+/src/WpfCostomTitle/WpfCostomTitle.csproj.user
+/src/WpfCostomTitle/bin
+/src/WpfCostomTitle/obj

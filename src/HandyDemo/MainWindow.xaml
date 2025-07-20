@@ -1,0 +1,40 @@
+﻿<hc:Window x:Class="HandyDemo.MainWindow"
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           xmlns:hc="https://handyorg.github.io/handycontrol"
+           xmlns:local="clr-namespace:HandyDemo"
+           mc:Ignorable="d"
+           Style="{StaticResource WindowWin10}"
+           Icon="pack://application:,,,/Resources/Icons/icon.ico"
+           Height="450" Width="800">
+
+    <hc:Window.Resources>
+        <ResourceDictionary Source="/Resources/Styles/Geometry.xaml" />
+    </hc:Window.Resources>
+
+    <hc:Window.NonClientAreaContent>
+        <DockPanel Height="28">
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Left">
+                <Button BorderThickness="0" Padding="10,0" hc:BorderElement.CornerRadius="0" Click="Btn_Tool">文件</Button>
+                <Button BorderThickness="0" Padding="10,0" hc:BorderElement.CornerRadius="0" Click="Btn_Tool">编辑</Button>
+                <Button BorderThickness="0" Padding="10,0" hc:BorderElement.CornerRadius="0" Click="Btn_Tool">视图</Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Right" FlowDirection="RightToLeft">
+                <Button BorderThickness="0" Width="42" Padding="0" hc:BorderElement.CornerRadius="0" Margin="10,0,0,0" Click="Btn_Github">
+                    <Path Margin="5" Fill="#3F3F3F" Stretch="Uniform" ToolTip="ConfigGeometry" Data="{StaticResource ConfigGeometry}"/>
+                </Button>
+                <Button BorderThickness="0" Width="42" Padding="0" hc:BorderElement.CornerRadius="0" Click="Btn_Settings">
+                    <Path Margin="5" Fill="#6F6F6F" Stretch="Uniform" ToolTip="GithubGeometry" Data="{StaticResource GithubGeometry}"/>
+                </Button>
+            </StackPanel>
+        </DockPanel>
+    </hc:Window.NonClientAreaContent>
+
+    <Grid>
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#999999" FontSize="128" Text="Hello World!" Margin="0,-120,0,0" />
+        <TextBlock Name="txMessage" 
+                   VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#bbbbbb" FontSize="56"  Text="Hello World!" Margin="0,+150,0,0" />
+    </Grid>
+</hc:Window>
