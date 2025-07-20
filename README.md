@@ -1,11 +1,11 @@
-### wpf ×Ô¶¨Òå±êÌâ
+### wpf è‡ªå®šä¹‰æ ‡é¢˜
 
-HandyControl Demo£º<br />
-²Î¿¼demo£ºhttps://github.com/AFei19911012/HandyControlDemo.git
+HandyControl Demoï¼š<br />
+å‚è€ƒdemoï¼šhttps://github.com/AFei19911012/HandyControlDemo.git
 
 ![mdResources/Handy01.png](Handy01.png)
 
 
-MahApps.Metro Demo£º<br />
+MahApps.Metro Demoï¼š<br />
 ![mdResources/Metro01.png](Metro01.png)
 
