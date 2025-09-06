@@ -8,7 +8,8 @@
            mc:Ignorable="d"
            Style="{StaticResource WindowWin10}"
            Icon="pack://application:,,,/Resources/Icons/icon.ico"
-           Height="450" Width="800">
+           Height="450" Width="800"
+           WindowStartupLocation="CenterScreen">
 
     <hc:Window.Resources>
         <ResourceDictionary Source="/Resources/Styles/Geometry.xaml" />

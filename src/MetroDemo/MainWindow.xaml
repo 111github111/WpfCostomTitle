@@ -7,10 +7,11 @@
         xmlns:local="clr-namespace:WpfApp1"
         xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
         xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
-    xmlns:metro="clr-namespace:MahApps.Metro.IconPacks.Converter;assembly=MahApps.Metro.IconPacks.Core"
+        xmlns:metro="clr-namespace:MahApps.Metro.IconPacks.Converter;assembly=MahApps.Metro.IconPacks.Core"
         mc:Ignorable="d"
         Background="White"
-        Height="450" Width="800">
+        Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
 
     <controls:MetroWindow.Resources>
         <ResourceDictionary>
