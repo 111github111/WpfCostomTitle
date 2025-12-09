@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandyDemo", "HandyDemo\Hand
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetroDemo", "MetroDemo\MetroDemo.csproj", "{8FAA0AE7-A3C4-6F79-F19D-3C0F8CC79E48}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvaloniaCostomTitle", "AvaloniaCostomTitle\AvaloniaCostomTitle.csproj", "{7B37031F-48C8-44C6-A470-112488F84139}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{8FAA0AE7-A3C4-6F79-F19D-3C0F8CC79E48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FAA0AE7-A3C4-6F79-F19D-3C0F8CC79E48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FAA0AE7-A3C4-6F79-F19D-3C0F8CC79E48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B37031F-48C8-44C6-A470-112488F84139}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B37031F-48C8-44C6-A470-112488F84139}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B37031F-48C8-44C6-A470-112488F84139}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B37031F-48C8-44C6-A470-112488F84139}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

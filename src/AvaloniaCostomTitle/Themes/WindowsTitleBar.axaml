@@ -1,0 +1,115 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="390" d:DesignHeight="60"
+             x:Class="AvaloniaCostomTitle.WindowsTitleBar">
+
+
+	<DockPanel>
+		<StackPanel Name="leftPanel">
+			<!-- 模板,绑定 不知道为啥不生效  -->
+			<!-- Template="{Binding Path=LeftBox, RelativeSource={RelativeSource AncestorType=ContentControl}}" -->
+			<ContentControl HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" Name="myLeftCtx" />
+		</StackPanel>
+
+		
+  <StackPanel Name="menuPanel" DockPanel.Dock="Right" 
+					HorizontalAlignment="Right"
+					Orientation="Horizontal"
+					Spacing="0">
+			<Button Width="46"
+					Height="30"
+					HorizontalContentAlignment="Center"
+					VerticalContentAlignment="Center"
+					BorderThickness="0"
+					Name="winMinimizeButton"
+					Click="MinimizeWindow"
+					ToolTip.Tip="Minimize">
+				<Button.Resources>
+					<CornerRadius x:Key="ControlCornerRadius">0</CornerRadius>
+				</Button.Resources>
+				<Button.Styles>
+					<Style Selector="Button:pointerover /template/ ContentPresenter#PART_ContentPresenter">
+						<Setter Property="Background" Value="#44AAAAAA"/>
+					</Style>
+					<Style Selector="Button:not(:pointerover) /template/ ContentPresenter#PART_ContentPresenter">
+						<Setter Property="Background" Value="Transparent"/>
+					</Style>
+				</Button.Styles>
+				<Path Margin="10,0,10,0"
+					  Stretch="Uniform"
+					  Fill="{DynamicResource SystemControlForegroundBaseHighBrush}"
+					  Data="M2048 1229v-205h-2048v205h2048z"></Path>
+			</Button>
+
+			<Button Width="46"
+					VerticalAlignment="Stretch"
+					VerticalContentAlignment="Center"
+					BorderThickness="0"
+					Click="MaximizeWindow"
+					Name="winMaximizeButton">
+				<ToolTip.Tip>
+					<ToolTip Content="Maximize"
+							 Name="MaximizeToolTip"></ToolTip>
+				</ToolTip.Tip>
+
+				<Button.Resources>
+					<CornerRadius x:Key="ControlCornerRadius">0</CornerRadius>
+				</Button.Resources>
+				<Button.Styles>
+					<Style Selector="Button:pointerover /template/ ContentPresenter#PART_ContentPresenter">
+						<Setter Property="Background" Value="#44AAAAAA"/>
+					</Style>
+					<Style Selector="Button:not(:pointerover) /template/ ContentPresenter#PART_ContentPresenter">
+						<Setter Property="Background" Value="Transparent"/>
+					</Style>
+				</Button.Styles>
+				<Path Margin="10,0,10,0"
+					  Stretch="Uniform"
+					  Fill="{DynamicResource SystemControlForegroundBaseHighBrush}"
+					  Name="winMaximizeIcon"
+					  Data="M2048 2048v-2048h-2048v2048h2048zM1843 1843h-1638v-1638h1638v1638z"></Path>
+			</Button>
+
+			<Button Width="46"
+					VerticalAlignment="Stretch"
+					VerticalContentAlignment="Center"
+					BorderThickness="0"
+					Name="winCloseButton"
+					Click="CloseWindow2"
+					ToolTip.Tip="Close">
+				<Button.Resources>
+					<CornerRadius x:Key="ControlCornerRadius">0</CornerRadius>
+				</Button.Resources>
+				<Button.Styles>
+					<Style Selector="Button:pointerover /template/ ContentPresenter#PART_ContentPresenter">
+						<Setter Property="Background" Value="Red"/>
+					</Style>
+					<Style Selector="Button:not(:pointerover) /template/ ContentPresenter#PART_ContentPresenter">
+						<Setter Property="Background" Value="Transparent"/>
+					</Style>
+					<Style Selector="Button:pointerover > Path">
+						<Setter Property="Fill" Value="White"/>
+					</Style>
+					<Style Selector="Button:not(:pointerover) > Path">
+						<Setter Property="Fill" Value="{DynamicResource SystemControlForegroundBaseHighBrush}"/>
+					</Style>
+				</Button.Styles>
+				<Path Margin="10,0,10,0"
+					  Stretch="Uniform"
+					  Data="M1169 1024l879 -879l-145 -145l-879 879l-879 -879l-145 145l879 879l-879 879l145 145l879 -879l879 879l145 -145z"></Path>
+			</Button>
+		</StackPanel>
+		
+		<StackPanel Name="rightPanel" 
+			  DockPanel.Dock="Right"
+			  HorizontalAlignment="Right"
+			  VerticalAlignment="Stretch"
+			  Orientation="Horizontal"
+			  Spacing="0">
+			<ContentControl HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" Name="myRightCtx" />
+		</StackPanel>
+
+	</DockPanel>
+</UserControl>
