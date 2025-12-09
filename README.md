@@ -9,3 +9,7 @@ HandyControl Demo：<br />
 MahApps.Metro Demo：<br />
 ![mdResources/Metro01.png](mdResources/Metro01.png)
 
+
+Avalonia Demo：<br />
+![mdResources/avalonia01.png](mdResources/avalonia01.png)
+
